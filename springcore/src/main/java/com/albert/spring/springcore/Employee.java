@@ -1,4 +1,4 @@
-package com.albert.spring;
+package com.albert.spring.springcore;
 
 public class Employee {
 
