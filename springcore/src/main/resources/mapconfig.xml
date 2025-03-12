@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://www.springframework.org/schema/beans
+    http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+  <bean name="customer" class="com.albert.spring.springcore.map.Customer">
+    <property name="id" value="20" />
+    <property name="products">
+      <map>
+        <entry key="100" value="Iphone"/>
+        <entry key="200">
+          <value>Ipad</value>
+        </entry>
+        <entry value="MacBook Pro">
+          <key>
+            <value>300</value>
+          </key>
+        </entry>
+        <entry>
+          <key>
+            <value>400</value>
+          </key>
+          <value>MacBook AIR</value>
+        </entry>
+      </map>
+    </property>
+  </bean>
+</beans>
