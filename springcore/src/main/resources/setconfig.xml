@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://www.springframework.org/schema/beans
+    http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+  <bean name="cardealer" class="com.albert.spring.springcore.set.CarDealer">
+    <property name="name">
+      <value>Golden Wheel</value>
+    </property>
+    <property name="models">
+      <set>
+        <value>Mercedes</value>
+        <value>BMW Serie 1</value>
+        <value>BMW Serie 1</value>
+        <value>Ferrari Testarossa</value>
+        <value>Maserati</value>
+      </set>
+    </property>
+  </bean>
+</beans>
