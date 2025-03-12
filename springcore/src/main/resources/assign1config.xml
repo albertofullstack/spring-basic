@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://www.springframework.org/schema/beans
+    http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+  <bean name="item" class="com.albert.spring.springcore.assignment1.Item">
+    <property name="id" value="1" />
+    <property name="name" value="Rubber duck" />
+    <property name="price" value="1000.20" />
+    <property name="quantity" value="100" />
+  </bean>
+  <bean name="shoppingCart" class="com.albert.spring.springcore.assignment1.ShoppingCart">
+    <property name="item" ref="item" />
+  </bean>
+</beans>
