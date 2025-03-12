@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://www.springframework.org/schema/beans
+    http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+  <bean name="scores" class="com.albert.spring.springcore.reftypes.Scores">
+    <property name="maths" value="2.5" />
+    <property name="physics" value="5.5" />
+    <property name="chemistry" value="10" />
+  </bean>
+  <bean name="student" class="com.albert.spring.springcore.reftypes.Student">
+    <property name="scores" ref="scores" />
+  </bean>
+</beans>
