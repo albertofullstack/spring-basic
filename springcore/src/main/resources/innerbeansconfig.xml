@@ -7,7 +7,7 @@
     http://www.springframework.org/schema/context
     http://www.springframework.org/schema/context/spring-context.xsd">
 
-  <bean class="com.albert.spring.springcore.innerbeans.Employee" name="employee" scope="singleton">
+  <bean class="com.albert.spring.springcore.innerbeans.Employee" name="employee" scope="prototype">
     <property name="id" value="10" />
     <property name="address">
       <bean class="com.albert.spring.springcore.innerbeans.Address">
@@ -20,6 +20,6 @@
 
   <bean class="org.springframework.beans.factory.annotation.RequiredAnnotationBeanPostProcessor" />
 
-  <!--<context:annotation-config/>-->
+  <context:annotation-config/>
 
 </beans>
