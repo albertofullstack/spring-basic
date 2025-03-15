@@ -7,7 +7,7 @@
     http://www.springframework.org/schema/context
     http://www.springframework.org/schema/context/spring-context.xsd">
 
-  <bean class="com.albert.spring.springcore.innerbeans.Employee" name="employee">
+  <bean class="com.albert.spring.springcore.innerbeans.Employee" name="employee" scope="singleton">
     <property name="id" value="10" />
     <property name="address">
       <bean class="com.albert.spring.springcore.innerbeans.Address">
